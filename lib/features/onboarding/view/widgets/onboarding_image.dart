@@ -1,5 +1,7 @@
 import 'package:fashion_town/core/constants/assets_image_manager.dart';
+import 'package:fashion_town/core/theme/style_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class OnboardingImage extends StatelessWidget {
   const OnboardingImage({super.key});
@@ -16,11 +18,22 @@ class OnboardingImage extends StatelessWidget {
         ],
         begin: Alignment.bottomCenter,
         end: Alignment.center,
-        stops: [0.14,0.4]
+        stops: const [0.14,0.4]
         ),
       ),
       child: Image.asset(AssetImageManager.onboardingImage),
-      ),]
+      ),
+      Positioned(
+        bottom: 30,
+        left: 0,
+        right: 0,
+        child: 
+           Text('The Fashion Town App That \n Makes You Look Your Best',
+         textAlign: TextAlign.center,
+         style: StyleText.textStyle23,
+          ),
+        )
+      ]
     );
   }
 }
