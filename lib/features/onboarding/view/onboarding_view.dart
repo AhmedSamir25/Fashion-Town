@@ -1,3 +1,4 @@
+import 'package:fashion_town/features/onboarding/view/widgets/onboarding_image.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingView extends StatelessWidget {
@@ -9,7 +10,7 @@ class OnBoardingView extends StatelessWidget {
       body: SafeArea(child: 
       Column(
         children: [
-          
+          OnboardingImage(),
         ],
       ),
       ),
