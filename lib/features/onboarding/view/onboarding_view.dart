@@ -1,6 +1,7 @@
 import 'package:fashion_town/core/theme/style_text.dart';
 import 'package:fashion_town/features/onboarding/view/widgets/onboarding_elevated_button.dart';
 import 'package:fashion_town/features/onboarding/view/widgets/onboarding_image.dart';
+import 'package:fashion_town/features/onboarding/view/widgets/signin_onboarding_text_button.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingView extends StatelessWidget {
@@ -22,7 +23,10 @@ class OnBoardingView extends StatelessWidget {
               height: heightMedia * 0.03,
             ),
             const OnboardingElevatedButton(),
-          
+            SizedBox(
+              height: heightMedia * 0.014,
+            ),
+            const SigninOnboardingTextButton(),
           ],
         ),
       ),
