@@ -8,4 +8,8 @@ class StyleText {
   static TextStyle textStyle14 = const TextStyle(
     fontSize: 14,
   );
+  static TextStyle textStyleWhite20 = const TextStyle(
+    fontSize: 20,
+    color: Colors.white,
+  );
 }

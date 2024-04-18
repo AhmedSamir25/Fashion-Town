@@ -1,3 +1,4 @@
+import 'package:fashion_town/core/theme/style_text.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingElevatedButton extends StatelessWidget {
@@ -10,10 +11,7 @@ class OnboardingElevatedButton extends StatelessWidget {
       style: const ButtonStyle(
         backgroundColor: MaterialStatePropertyAll(Colors.brown)),
       child: Text('Lets Get Stread',
-      style: TextStyle(
-        color: Colors.white,
-        fontSize: 20
-      ),
+      style: StyleText.textStyleWhite20,
       ),
     );
   }
