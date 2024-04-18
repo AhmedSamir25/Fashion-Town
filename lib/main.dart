@@ -1,3 +1,5 @@
+import 'package:fashion_town/core/theme/color.dart';
+import 'package:fashion_town/features/onboarding/view/onboarding_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,9 +15,10 @@ class FashionTown extends StatelessWidget {
     return MaterialApp(
       title: 'Fashion Town',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: ColorsManager.mainColorApp),
         useMaterial3: true,
       ),
+      home: const OnBoardingView(),
     );
   }
 }
